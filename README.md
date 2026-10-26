@@ -15,59 +15,87 @@
 
 **FocusTask To-Do** is a modern, native Android productivity and task management application built in Kotlin. Engineered with **Material Design 3**, a robust **MVVM Clean Architecture**, and local-first offline persistence via **Jetpack Room**, FocusTask empowers users to effortlessly organize daily duties, track goals, and boost consistency through an engaging **gamification and streak engine**.
 
-Whether planning sprints, tracking study goals, scheduling deadlines on an interactive calendar, or quickly capturing tasks using **natural language voice input**, FocusTask delivers a fluid, distraction-free experience with zero bloat and complete data privacy.
+Whether planning sprints, tracking study goals, scheduling deadlines on an interactive calendar, managing detailed subtask checklists, or quickly capturing tasks using **natural language voice input**, FocusTask delivers a fluid, distraction-free experience with zero bloat and complete data privacy.
 
 ---
 
 ## 📸 Screenshots Showcase
 
+### 🏠 Dashboard, Creation & Task Details
+
 <p align="center">
-  <img src="screenshots/01_tasks_all.png" width="31%" alt="All Tasks View" />
+  <img src="screenshots/01_dashboard.png" width="31%" alt="Dashboard Overview" />
   &nbsp;&nbsp;
-  <img src="screenshots/02_tasks_category_work.png" width="31%" alt="Work Category View" />
+  <img src="screenshots/02_create_task.png" width="31%" alt="Create New Task Dialog" />
   &nbsp;&nbsp;
-  <img src="screenshots/03_tasks_category_personal.png" width="31%" alt="Personal Category View" />
+  <img src="screenshots/03_task_detail_subtasks.png" width="31%" alt="Task Details & Subtasks" />
 </p>
 
 <p align="center">
-  <em><b>Fig 1:</b> All Tasks & Priority System &nbsp;|&nbsp; <b>Fig 2:</b> Work Category Filtering &nbsp;|&nbsp; <b>Fig 3:</b> Personal Tasks & Completed State</em>
+  <em><b>Fig 1:</b> Daily Dashboard & Progress &nbsp;|&nbsp; <b>Fig 2:</b> Create Task Modal Dialog &nbsp;|&nbsp; <b>Fig 3:</b> Task Details with Interactive Subtasks</em>
 </p>
 
-<br/>
+---
+
+### 🗂️ Task Management & Category Filtering
 
 <p align="center">
-  <img src="screenshots/04_calendar_schedule.png" width="31%" alt="Calendar & Schedule View" />
+  <img src="screenshots/04_tasks_all.png" width="31%" alt="All Tasks List" />
   &nbsp;&nbsp;
-  <img src="screenshots/05_productivity_analytics.png" width="31%" alt="Productivity & Analytics" />
+  <img src="screenshots/05_tasks_category_work.png" width="31%" alt="Work Category Filter" />
+  &nbsp;&nbsp;
+  <img src="screenshots/06_tasks_category_personal.png" width="31%" alt="Personal Category Filter" />
 </p>
 
 <p align="center">
-  <em><b>Fig 4:</b> Interactive Calendar & Date-Based Schedule &nbsp;|&nbsp; <b>Fig 5:</b> Productivity Stats, Streaks & Achievement Badges</em>
+  <em><b>Fig 4:</b> All Tasks & Priority Color Accents &nbsp;|&nbsp; <b>Fig 5:</b> Work Tasks & Tag Filtering &nbsp;|&nbsp; <b>Fig 6:</b> Personal Tasks & Completed State</em>
+</p>
+
+---
+
+### 📅 Calendar Schedule & Gamified Analytics
+
+<p align="center">
+  <img src="screenshots/07_calendar_schedule.png" width="31%" alt="Calendar View" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/08_productivity_analytics.png" width="31%" alt="Productivity Analytics" />
+</p>
+
+<p align="center">
+  <em><b>Fig 7:</b> Interactive Month Calendar & Daily Agenda &nbsp;|&nbsp; <b>Fig 8:</b> Productivity KPIs, Streaks & Achievement Badges</em>
 </p>
 
 ---
 
 ## ✨ Key Features
 
-### 📋 1. Smart Task & Subtask Organization
+### 🏠 1. Smart Dashboard
+- **Dynamic Greeting**: Time-aware greetings (*"Good Morning"*, *"Good Afternoon"*, *"Good Evening"*).
+- **Productivity Level & XP**: Real-time display of user level and accumulated XP points (e.g. *Level 1 Explorer • 15 XP*).
+- **Streak Tracker**: Visual streak indicator (`🔥 X Day Streak`) tracking consecutive days of task completion.
+- **Today's Progress Bar**: Real-time percentage indicator and summary (*Completed vs. Pending tasks*).
+- **Voice Quick Add**: Dedicated microphone button in the dashboard to immediately create tasks with speech input.
+
+### 📋 2. Comprehensive Task & Subtask Management
+- **Task Creation & Editing Modal**: Set title, description/notes, category, priority, due date, due time, subtasks, and tags in a clean modal dialog.
+- **Subtask Checklists**: Break down complex tasks into subtasks with individual completion checkboxes and delete actions.
 - **Priority Tiering**: Color-coded priority badges (**Low**, **Medium**, **High**, **Critical**) with visual indicator accents.
 - **Category Segmentation**: Instant horizontal pill filters for `Personal`, `Work`, `Study`, `Shopping`, `Health`, `Finance`, and `Travel`.
-- **Subtask Checklists**: Break complex objectives into bite-sized actionable steps with progress indicators.
 - **Recurrence Engine**: Support for recurring task routines (`Daily`, `Weekly`, `Monthly`, `Yearly`).
 - **Interactive Completion**: Quick one-tap checkbox toggle with animated strike-through and soft-trash removal.
 
-### 🎙️ 2. Natural Language Voice & Smart Task Parsing
+### 🎙️ 3. Natural Language Voice & Smart Task Parsing
 - Hands-free task capture through conversational text or voice transcription (`VoiceTaskParser`).
 - Automatically extracts **Title**, **Due Date** (*"tomorrow"*, *"next week"*), **Time of Day** (*"morning"*, *"afternoon"*, *"evening"*), and **Priority** (*"urgent"*, *"critical"*, *"important"*).
 
-### 📅 3. Interactive Calendar & Agenda View
+### 📅 4. Interactive Calendar & Agenda View
 - Visual month calendar showing active task distributions.
 - Select any date to inspect scheduled deadlines and sprint items.
 - Dedicated inline quick-add button to schedule events directly for the chosen day.
 
-### 🏆 4. Gamification, Streaks & Badges Engine
+### 🏆 5. Gamification, Streaks & Badges Engine
 - **XP Progression**: Earn +15 XP with every completed task to level up your productivity tier.
-- **Streak Keeper**: Track consecutive days of task completion with visual streak counters (`🔥 X Days`).
+- **Streak Keeper**: Track consecutive days of task completion with visual streak counters.
 - **Milestone Badges**: Unlockable achievements with real-time animated progress bars:
   - 🏅 **First Step** — Complete your 1st task
   - 🏅 **Getting Things Done** — Complete 10 tasks
@@ -76,20 +104,20 @@ Whether planning sprints, tracking study goals, scheduling deadlines on an inter
   - ⚡ **Unstoppable** — Maintain a 7-day streak
 - **Analytics Dashboard**: Real-time KPI cards displaying Total Active Tasks, Completed Tasks, Completion Rate %, and Streaks.
 
-### ⏰ 5. Timely Reminders & Background Scheduling
+### ⏰ 6. Timely Reminders & Background Scheduling
 - Built with **Android Jetpack WorkManager** for guaranteed, battery-efficient alarm delivery.
 - Rich system notifications featuring direct **Quick Actions** (`Complete` or `Snooze 10m`) right from the notification drawer without launching the app.
 
-### 🔒 6. Privacy & Security Lock
+### 🔒 7. Privacy & Security Lock
 - Protect sensitive tasks, notes, and schedules with an optional **4-Digit PIN Lock** (`PinLockDialogFragment`).
 - Prompts authentication upon launch when enabled in Settings.
 
-### 🌗 7. Modern UI / UX & Dark Mode
+### 🌗 8. Modern UI / UX & Dark Mode
 - Full **Material Design 3** compliance with edge-to-edge system bar padding.
 - Adaptive **Dark Mode** toggle with instant runtime theme switching.
 - Clean typography, smooth cards, elevation shadows, and micro-interactions.
 
-### 💾 8. Data Import / Export & Backup
+### 💾 9. Data Import / Export & Backup
 - **JSON Export**: Export entire database backup to system clipboard with one tap.
 - **JSON Import**: Easily restore or migrate tasks across devices without external dependencies.
 - **Demo Mode**: Built-in seed generator to populate sample tasks for quick testing and onboarding.
@@ -149,7 +177,7 @@ codvedx_t_1/
 │       │   │   └── fragment/      # Dashboard, TaskList, Calendar, Statistics, Settings
 │       │   └── util/              # Gamification, Notifications, Preferences, VoiceParser
 │       └── res/                   # Layouts, drawables, navigation, colors & strings
-├── screenshots/                   # Application preview screenshots
+├── screenshots/                   # Application preview screenshots (8 showcase images)
 ├── build.gradle.kts               # Top-level build configuration
 ├── settings.gradle.kts            # Project repositories & module settings
 └── README.md                      # Project documentation
