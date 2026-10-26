@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FocusTask To-Do</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_morning">Good Morning 👋</string>
+    <string name="greeting_afternoon">Good Afternoon 👋</string>
+    <string name="greeting_evening">Good Evening 👋</string>
+    <string name="todays_progress">Today\'s Progress</string>
+    <string name="todays_tasks">Today\'s Tasks</string>
+    <string name="quick_add">Quick Add Task</string>
+
+    <!-- Tasks -->
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Description</string>
+    <string name="priority">Priority</string>
+    <string name="category">Category</string>
+    <string name="due_date">Due Date</string>
+    <string name="due_time">Due Time</string>
+    <string name="reminder">Reminder</string>
+    <string name="recurrence">Repeat</string>
+    <string name="subtasks">Subtasks</string>
+    <string name="tags">Tags (comma separated)</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Priorities -->
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="priority_critical">Critical</string>
+
+    <!-- Categories -->
+    <string name="cat_personal">Personal</string>
+    <string name="cat_work">Work</string>
+    <string name="cat_study">Study</string>
+    <string name="cat_shopping">Shopping</string>
+    <string name="cat_health">Health</string>
+    <string name="cat_finance">Finance</string>
+    <string name="cat_travel">Travel</string>
+
+    <!-- Notification & Actions -->
+    <string name="action_complete">Complete</string>
+    <string name="action_snooze">Snooze (10m)</string>
+    <string name="task_reminder_title">Task Reminder</string>
+</resources>
